@@ -847,7 +847,9 @@ app.use(express.static(distDir));
 app.use((req, res, next) => req.path.startsWith('/api/') ? next() : res.sendFile(path.join(distDir, 'index.html')));
 
 ensureSchema()
-  .then(() => app.listen(port, () => console.log(`CarpoolCampus API running at http://localhost:${port}`)))
+  .then(() => app.listen(port, '0.0.0.0', () => {
+    console.log(`CarpoolCampus API running on port ${port}`);
+  }))
   .catch(error => {
     console.error('Database connection failed:', error.message);
     process.exit(1);
