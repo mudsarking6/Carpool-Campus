@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CarpoolCampus
 
 A student ride-sharing coordination web app for campus commuters. The project is organized as a monorepo with separate `frontend/` and `backend/` folders.
