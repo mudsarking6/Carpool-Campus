@@ -1,0 +1,19 @@
+{
+  "name": "carpool-campus-backend",
+  "private": true,
+  "version": "1.0.0",
+  "description": "CarpoolCampus Express API - authentication, routes, ride requests, trips, safety, admin",
+  "type": "module",
+  "scripts": {
+    "api": "node server/index.js",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "jsonwebtoken": "latest",
+    "pg": "latest"
+  }
+}

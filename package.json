@@ -1,0 +1,35 @@
+{
+  "name": "carpool-campus",
+  "private": true,
+  "version": "1.0.0",
+  "description": "CarpoolCampus monorepo - frontend in /frontend, backend in /backend",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "vite frontend",
+    "build": "vite build frontend",
+    "preview": "vite preview frontend",
+    "api": "node backend/server/index.js",
+    "start": "node backend/server/index.js",
+    "dev:full": "concurrently \"npm run api\" \"npm run dev\""
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "bcryptjs": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "jsonwebtoken": "latest",
+    "leaflet": "^1.9.4",
+    "pg": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-leaflet": "^5.0.0",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "concurrently": "latest"
+  }
+}

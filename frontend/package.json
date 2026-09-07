@@ -1,0 +1,20 @@
+{
+  "name": "carpool-campus-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "description": "CarpoolCampus React frontend - ride-matching dashboards, maps, trip management",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "leaflet": "^1.9.4",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-leaflet": "^5.0.0",
+    "vite": "latest"
+  }
+}
